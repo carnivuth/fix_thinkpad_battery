@@ -1,0 +1,9 @@
+[Unit]
+Description=Turns off bdproc
+
+[Service]
+ExecStart=/usr/bin/bdprochot.sh off
+Type=oneshot
+
+[Install]
+WantedBy=default.target
